@@ -1,6 +1,7 @@
-﻿a = list(x.Paths) 
-#a = path index
-s = int(s % len(a)) 
-#s = shift
-b = a[s:] + a[:s] if w else a[s:] 
-#b = shifted path, w = wrap boolean
+﻿s = 1
+w = True
+p = list(x.Paths)
+s = int(s % len(p))
+y = p[s:] + p[:s] if w else p[s:]
+for _ in range(len(y)):
+    print y[_]
